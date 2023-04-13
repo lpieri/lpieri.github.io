@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap');
+
+/* Variables */
+:root {
+  --default-color: #ffffff;
+  --second-color: #e8e8e8;
+  --text-color: #E1CCF0;
+  --default-hover-color: rgba(240, 201, 196, 1);
+  --navbar-background-color: var(--default-color);
+  --navbar-item-hover-background-color: var(--default-hover-color);
+  --navbar-item-hover-color: black;
+  --link: var(--text-color);
+  --info: var(--default-color);
+  --success: var(--second-color);
+  --box-width: 800px;
+  --modal-background-background-color: rgba(0, 0, 0, 0.2);
+  --card-content-padding: 3.7rem;
+  --card-background-color: transparent;
+  --card-border: transparent;
+  --family-primary: 'Lato', sans-serif;
+}
+
+/* General Class */
+.is-pink {
+  color: var(--text-color) !important;
+}
+
+.error {
+  color: red;
+}
+
+.full-height {
+  width: 100vw;
+  height: 100vh;
+}
+
+.particles {
+  background-color: var(--second-color);
+  display: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.arrow-pos {
+  position: absolute;
+  top: 98%;
+  left: 50%;
+}
+
+.meep-soon-pos {
+  position: absolute;
+  top: 96%;
+  left: 90%;
+}
+
+.logo-black {
+  fill: #212121;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.check-hash {
+  width: 45vh;
+  padding: 21px;
+  margin: 0 0 0 -21px;
+  background-color: #636363;
+  color: white;
+}
+
+.is-size-8 {
+  font-size: 0.42rem !important;
+}
+
+.lato-title-black {
+  font-family: var(--family-primary) !important;
+  font-style: italic !important;
+}
+
+.lato-title-pink {
+  font-family: var(--family-primary) !important;
+  font-style: italic !important;
+  color: var(--text-color) !important;
+}
+
+.lato-text-black {
+  font-family: var(--family-primary) !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  color: black;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-height: 375px) and (max-width: 823px) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+    margin: -18vh 0 0 -19vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+    margin: -18vh 0 0 -19vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+    margin: -18vh 0 0 -15vh;
+  }
+}
+
+@media (min-width: 1281px) and (orientation: landscape) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh
+  }
+}

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/base.css">
   <link rel="icon" href="static/assets/favicon.png" type="image/png">
   <title>Louise Pieri</title>
   <script>
@@ -22,7 +23,7 @@
       const listElement = document.getElementById("paramList");
 
       if (Object.keys(params).length === 0) {
-        document.getElementById("hello").textContent = "Hello World";
+        document.getElementById("hello").textContent = "";
       } else {
         document.getElementById("hello").textContent = "";
         for (const key in params) {
@@ -35,9 +36,76 @@
 
     document.addEventListener("DOMContentLoaded", displayParams);
   </script>
+  <style>
+    .navbar {
+      background: #ffffffde !important;
+    }
+
+    .navbar-item img {
+      max-height: 3.80rem !important;
+    }
+
+    body {
+      background-image: url('static/assets/bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+  </style>
+  <script>
+    function showModal() {
+      // Gérer l'affichage de la modale ici.
+    }
+
+    function toggleBurger() {
+      const burger = document.querySelector(".burger");
+      const menu = document.querySelector(".navbar-menu");
+      burger.classList.toggle("is-active");
+      menu.classList.toggle("is-active");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const burger = document.querySelector(".burger");
+      burger.addEventListener("click", toggleBurger);
+    });
+  </script>
 </head>
 
-<body>
+<body class="full-height">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <h1 class="title is-1 lato-title-pink">
+          <img src="static/assets/logo.png" alt="Logo de lpieri.github.io">
+        </h1>
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item buttons">
+          <button class="button is-rounded is-medium" onclick="showModal()">
+            <strong>Contact information</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="card overlay card-index">
+      <figure class="image is-square">
+        <img src="static/assets/logo-1025x1026.png" alt="logo" id="logo" />
+      </figure>
+    </div>
+  </section>
   <h1 id="hello"></h1>
   <ul id="paramList"></ul>
 </body>
