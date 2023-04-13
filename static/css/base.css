@@ -5,7 +5,8 @@
 :root {
   --default-color: #ffffff;
   --second-color: #e8e8e8;
-  --text-color: #E1CCF0;
+  /* old text-color: #E1CCF0; */
+  --text-color: #747aa9;
   --default-hover-color: rgba(240, 201, 196, 1);
   --navbar-background-color: var(--default-color);
   --navbar-item-hover-background-color: var(--default-hover-color);
@@ -33,40 +34,11 @@
 .full-height {
   width: 100vw;
   height: 100vh;
-}
-
-.particles {
-  background-color: var(--second-color);
-  display: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.arrow-pos {
-  position: absolute;
-  top: 98%;
-  left: 50%;
-}
-
-.meep-soon-pos {
-  position: absolute;
-  top: 96%;
-  left: 90%;
+  object-fit: cover;
 }
 
 .logo-black {
   fill: #212121;
-}
-
-.card {
-  background: white;
-  border-radius: 20px;
-  border: none;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .check-hash {
@@ -86,7 +58,12 @@
   font-style: italic !important;
 }
 
-.lato-title-pink {
+.lato-title-normal-black {
+  font-family: var(--family-primary) !important;
+  font-style: normal !important;
+}
+
+.lato-title-purple {
   font-family: var(--family-primary) !important;
   font-style: italic !important;
   color: var(--text-color) !important;
@@ -97,50 +74,4 @@
   font-style: normal !important;
   font-weight: 300 !important;
   color: black;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@media only screen and (min-height: 375px) and (max-width: 823px) {
-  .card-index {
-    padding: 21px;
-    min-width: 21vh;
-    max-height: 42vh;
-    max-width: 42vh;
-    margin: -18vh 0 0 -19vh;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .card-index {
-    padding: 21px;
-    min-width: 21vh;
-    max-height: 42vh;
-    max-width: 42vh;
-    margin: -18vh 0 0 -19vh;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .card-index {
-    padding: 21px;
-    min-width: 21vh;
-    max-height: 42vh;
-    max-width: 42vh;
-    margin: -18vh 0 0 -15vh;
-  }
-}
-
-@media (min-width: 1281px) and (orientation: landscape) {
-  .card-index {
-    padding: 21px;
-    min-width: 21vh;
-    max-height: 42vh;
-    max-width: 42vh
-  }
 }

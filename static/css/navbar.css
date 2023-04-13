@@ -1,0 +1,28 @@
+.contact-logo {
+  display: flex !important;
+  align-items: center;
+}
+
+.contact-div {
+  display: flex !important;
+  justify-content: center;
+}
+
+.navbar {
+  background: #ffffffde !important;
+}
+
+.navbar-item img {
+  max-height: 3.80rem !important;
+}
+
+.navbar-brand {
+  align-items: center !important;
+  justify-content: space-between;
+}
+
+.navbar-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

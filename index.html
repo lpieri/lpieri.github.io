@@ -6,96 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/base.css">
+  <link rel="stylesheet" href="static/css/card.css">
+  <link rel="stylesheet" href="static/css/navbar.css">
+  <script src="static/js/main.js"></script>
   <link rel="icon" href="static/assets/favicon.png" type="image/png">
   <title>Louise Pieri</title>
-  <script>
-    function getURLParams() {
-      const params = new URLSearchParams(window.location.search);
-      const urlParams = {};
-      for (const [key, value] of params.entries()) {
-        urlParams[key] = value;
-      }
-      return urlParams;
-    }
-
-    function displayParams() {
-      const params = getURLParams();
-      const listElement = document.getElementById("paramList");
-
-      if (Object.keys(params).length === 0) {
-        document.getElementById("hello").textContent = "";
-      } else {
-        document.getElementById("hello").textContent = "";
-        for (const key in params) {
-          const listItem = document.createElement("li");
-          listItem.textContent = `${key}: ${params[key]}`;
-          listElement.appendChild(listItem);
-        }
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", displayParams);
-  </script>
-  <style>
-    .navbar {
-      background: #ffffffde !important;
-    }
-
-    .navbar-item img {
-      max-height: 3.80rem !important;
-    }
-
-    body {
-      background-image: url('static/assets/bg.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-  </style>
-  <script>
-    function showModal() {
-      // Gérer l'affichage de la modale ici.
-    }
-
-    function toggleBurger() {
-      const burger = document.querySelector(".burger");
-      const menu = document.querySelector(".navbar-menu");
-      burger.classList.toggle("is-active");
-      menu.classList.toggle("is-active");
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const burger = document.querySelector(".burger");
-      burger.addEventListener("click", toggleBurger);
-    });
-  </script>
 </head>
 
 <body class="full-height">
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <h1 class="title is-1 lato-title-pink">
-          <img src="static/assets/logo.png" alt="Logo de lpieri.github.io">
+        <h1 class="title is-1 lato-title-purple">
+          Louise Pieri
+          <!-- <img src="static/assets/logo.png" alt="Le logo de Louise Pieri"> -->
         </h1>
       </a>
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-        data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarLink">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="navbarLink" class="navbar-menu">
       <div class="navbar-end">
-        <div class="navbar-item buttons">
-          <button class="button is-rounded is-medium" onclick="showModal()">
-            <strong>Contact information</strong>
-          </button>
-        </div>
+        <a class="navbar-item" href="https://github.com/lpieri">
+          <figure class="contact-logo image is-48x48 is-rounded">
+            <img src="static/assets/navbar/github.png">
+          </figure>
+        </a>
+        <a class="navbar-item" href="https://www.linkedin.com/in/lpieri/">
+          <figure class="contact-logo image is-48x48 is-rounded">
+            <img src="static/assets/navbar/linkedin.png">
+          </figure>
+        </a>
+        <a class="navbar-item" href="https://www.malt.fr/profile/delay">
+          <figure class="contact-logo image is-48x48 is-rounded">
+            <img src="static/assets/navbar/malt.png">
+          </figure>
+        </a>
+        <a class="navbar-item" href="https://www.instagram.com/louise_l0/">
+          <figure class="contact-logo image is-48x48 is-rounded">
+            <img src="static/assets/navbar/insta.png">
+          </figure>
+        </a>
       </div>
     </div>
   </nav>
@@ -105,8 +60,11 @@
         <img src="static/assets/logo-1025x1026.png" alt="logo" id="logo" />
       </figure>
     </div>
+    <div class="card overlay-title card-title">
+      <h3 class="title is-4 lato-title-normal-black">DevOps & MLOps @Zenlaw</h2>
+    </div>
+    <img src="static/assets/bg.jpg" alt="background" class="full-height">
   </section>
-  <h1 id="hello"></h1>
   <ul id="paramList"></ul>
 </body>
 

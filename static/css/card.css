@@ -1,0 +1,228 @@
+.card {
+  background: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-title {
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Mobile Small (jusqu'à 320px) */
+.card-index {
+  padding: 14px;
+  min-width: 18vh;
+  max-height: 35vh;
+  max-width: 35vh;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  min-width: 18vh;
+  max-height: 35vh;
+  max-width: 35vh;
+}
+
+/* Mobile Medium (jusqu'à 375px) */
+@media (min-width: 321px) and (max-width: 375px) {
+  .card-index {
+    padding: 18px;
+    min-width: 20vh;
+    max-height: 40vh;
+    max-width: 40vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    min-width: 20vh;
+    max-height: 40vh;
+    max-width: 40vh;
+  }
+}
+
+/* Mobile Large (jusqu'à 425px) */
+@media (min-width: 376px) and (max-width: 425px) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+}
+
+/* Tablet Portrait (jusqu'à 767px) */
+@media (min-width: 426px) and (max-width: 767px) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+}
+
+/* Tablet Landscape (jusqu'à 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+}
+
+/* Tablet Portrait (jusqu'à 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+}
+
+/* Desktop Standard (jusqu'à 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+}
+
+/* Desktop Large (jusqu'à 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+}
+
+/* Desktop X-Large (jusqu'à 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+}
+
+/* Desktop XX-Large (1921px et plus) */
+@media (min-width: 1921px) {
+  .card-index {
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    min-width: 21vh;
+    max-height: 42vh;
+    max-width: 42vh;
+  }
+}
