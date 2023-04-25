@@ -12,6 +12,9 @@ function displayParams() {
   const listElement = document.getElementById("paramList");
 
   if (Object.keys(params).length !== 0) {
+    if ("fbclid" in params) {
+      return
+    }
     // Cacher tous les autres éléments sauf la liste
     document.querySelector("nav.navbar").style.display = "none";
     document.querySelector("section").style.display = "none";
