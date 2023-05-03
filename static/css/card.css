@@ -12,16 +12,16 @@
   transform: translate(-50%, -50%);
 }
 
+/* Mobile Small (jusqu'à 320px) */
 .overlay-title {
   position: absolute;
-  top: 67%;
+  top: 72%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* Mobile Small (jusqu'à 320px) */
 .card-index {
-  padding: 14px;
+  padding: 11px;
   min-width: 18vh;
   max-height: 35vh;
   max-width: 35vh;
@@ -32,7 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 14px;
+  padding: 11px;
   min-width: 18vh;
   max-height: 35vh;
   max-width: 35vh;
@@ -40,8 +40,15 @@
 
 /* Mobile Medium (jusqu'à 375px) */
 @media (min-width: 321px) and (max-width: 375px) {
+  .overlay-title {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
-    padding: 18px;
+    padding: 14px;
     min-width: 20vh;
     max-height: 40vh;
     max-width: 40vh;
@@ -52,7 +59,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 18px;
+    padding: 14px;
     min-width: 20vh;
     max-height: 40vh;
     max-width: 40vh;
@@ -61,8 +68,15 @@
 
 /* Mobile Large (jusqu'à 425px) */
 @media (min-width: 376px) and (max-width: 425px) {
+  .overlay-title {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
-    padding: 21px;
+    padding: 16px;
     min-width: 21vh;
     max-height: 42vh;
     max-width: 42vh;
@@ -73,7 +87,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 21px;
+    padding: 16px;
     min-width: 21vh;
     max-height: 42vh;
     max-width: 42vh;
@@ -82,8 +96,15 @@
 
 /* Tablet Portrait (jusqu'à 767px) */
 @media (min-width: 426px) and (max-width: 767px) {
+  .overlay-title {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
-    padding: 21px;
+    padding: 18px;
     min-width: 21vh;
     max-height: 42vh;
     max-width: 42vh;
@@ -94,7 +115,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 21px;
+    padding: 18px;
     min-width: 21vh;
     max-height: 42vh;
     max-width: 42vh;
@@ -103,6 +124,13 @@
 
 /* Tablet Landscape (jusqu'à 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .overlay-title {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
     padding: 21px;
     min-width: 21vh;
@@ -124,6 +152,13 @@
 
 /* Tablet Portrait (jusqu'à 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .overlay-title {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
     padding: 21px;
     min-width: 21vh;
@@ -145,6 +180,13 @@
 
 /* Desktop Standard (jusqu'à 1280px) */
 @media (min-width: 1025px) and (max-width: 1280px) {
+  .overlay-title {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
     padding: 21px;
     min-width: 21vh;
@@ -166,6 +208,13 @@
 
 /* Desktop Large (jusqu'à 1440px) */
 @media (min-width: 1281px) and (max-width: 1440px) {
+  .overlay-title {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
     padding: 21px;
     min-width: 21vh;
@@ -187,6 +236,13 @@
 
 /* Desktop X-Large (jusqu'à 1920px) */
 @media (min-width: 1441px) and (max-width: 1920px) {
+  .overlay-title {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
     padding: 21px;
     min-width: 21vh;
@@ -208,6 +264,13 @@
 
 /* Desktop XX-Large (1921px et plus) */
 @media (min-width: 1921px) {
+  .overlay-title {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .card-index {
     padding: 21px;
     min-width: 21vh;
